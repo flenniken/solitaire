@@ -1,0 +1,94 @@
+
+// This file contains all the English strings.
+// It is included in the resource file.
+
+
+#define kStrAppTitle				1
+#define kStrCannotAddKeywords		2
+#define kStrUnsupportedVersion		3
+#define kStrOpenFileToBegin			4
+#define kStrAreYouSure				5
+#define kStrCannotAssignKeys		6
+#define kStrPressKey				7
+#define kStrCurrentFile				8
+#define kStrTotalFiles				9
+#define kStrKeywords				10
+#define kStrKeywordChanged			11
+#define kStrFileReadOnly			12
+#define kStrUnsupportedFile			13
+#define kStrGenerating				14
+#define kStrSeconds					15
+#define kStrDescription				16
+#define kStrNotEnoughDisk			17
+#define kStrUnableToWriteFile		18
+#define kStrUninstallPrompt			19
+#define kStrInstall					20
+#define kStrNext					21
+#define kStrValidUntil				22
+#define kStrLicenseTo				23
+#define kStrAlreadyAssigned			24
+//#define kStrPressAKey				25
+#define kStrTypeKeyAssignment		25
+#define kStrKey						26
+#define kStrShiftState				27
+#define kStrAssignment				28
+#define kStrStarRating				29
+#define kStrCannotReadKeywords		30
+#define kKeyListMenuNew				31
+#define kKeyListMenuEdit			32
+#define kKeyListMenuDelete			33
+#define kKeyListMenuUseKeyword		34
+#define kNewKeyTitle				35
+#define kEditKeyTitle				36
+#define kStrAccept					37
+#define kStrDecline					38
+#define kStrPreviewUnavailable		39
+
+#ifdef RC_INVOKED
+
+STRINGTABLE 
+BEGIN
+    kStrAppTitle			"Keypict"
+	kStrCannotAddKeywords	"Unable to write the keywords to the file."
+	kStrUnsupportedVersion	"Keypict requires Windows 2000 or newer. \nSee http://www.keypict.com"
+    kStrOpenFileToBegin		"Welcome to Keypict\r\n\r\nTo begin adding keywords to photos:\r\n\r\n   1. Open a digital photo (Ctrl+O),\r\n   2. Assign keys to keywords (Ctrl+K),\r\n   3. Type single keys to add keywords.\r\n\r\nFor more information see the help file."
+	kStrAreYouSure			"Are you sure you want to delete keyword(s):\n'^1'?"
+    kStrCannotAssignKeys	"You cannot assign these keys: Left, Right, Up, Down, Home, End, Backspace, Return and Esc,\nor Ctrl+E, Ctrl+C, Ctrl+K, Ctrl+O, Ctrl+T, Ctrl+V and Ctrl+Up. \nThese keys control the program."
+    kStrPressKey			"Press key"
+    kStrCurrentFile			"Current File"
+    kStrTotalFiles			"Total files in the current directory."
+    kStrKeywords			"The photo's keywords."
+    kStrKeywordChanged		"You've made changes (Type Enter to save)."
+    kStrFileReadOnly		"The photo is read only."
+    kStrUnsupportedFile		"You cannot add keywords to this file."
+    kStrGenerating			"Generating high resolution image..."
+    kStrSeconds				"Seconds"
+    kStrDescription			"Add keywords to digital photos."
+	kStrNotEnoughDisk		"Not enough disk space to install in this folder. \n^1 KB needed, ^2 KB available."
+	kStrUnableToWriteFile	"Unable to write the files to the install folder."
+	kStrUninstallPrompt		"Are you sure you want to uninstall Keypict?"
+	kStrInstall				"&Install"
+	kStrNext				""
+	kStrValidUntil			"Evaluation Copy. Good for ^1 more days."
+	kStrLicenseTo			""
+	kStrAlreadyAssigned		"This key combination is currently assigned to '^1'. \nDo you want to assign this key combination to your new keyword(s) and unassign the current?"
+	kStrTypeKeyAssignment	"Type one or more keywords in 'New' editbox."
+	kStrKey					"Key"
+	kStrShiftState			"Shift Key(s)"
+	kStrAssignment			"Keyword(s)"
+    kStrStarRating			"The star rating."
+	kStrCannotReadKeywords	"Unable to read keywords from the file."
+	kKeyListMenuNew			"New..."
+	kKeyListMenuEdit		"Edit..."
+	kKeyListMenuDelete		"Delete"
+	kKeyListMenuUseKeyword	"Use Keyword"
+	kNewKeyTitle			"New Key"
+	kEditKeyTitle			"Edit Key"
+	kStrAccept				"Accept"
+	kStrDecline				"Decline"
+	kStrPreviewUnavailable	"Image preview unavailable."
+END
+
+
+
+#endif
