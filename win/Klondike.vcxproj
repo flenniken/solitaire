@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4BF9C6FE-1A99-420A-822A-40F2B4651C35}</ProjectGuid>
+    <RootNamespace>Klondike</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.29403.142</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Message>Generate Version Number</Message>
+      <Command>GenVersionNumber "1,0,0,0" "1.0"&gt;..\source\VersionNumber.h</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\people\source;..\..\Keypict Photo Search\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NOPAINT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>gdiplus.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Message>Generate Version Number</Message>
+      <Command>GenVersionNumber "1,0,0,0" "1.0"&gt;..\source\VersionNumber.h</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\people\source;..\..\Keypict Photo Search\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NOPAINT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>gdiplus.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\AboutBox.cpp" />
+    <ClCompile Include="..\source\Armadillo.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Disabled</Optimization>
+    </ClCompile>
+    <ClCompile Include="..\source\BigCard.cpp" />
+    <ClCompile Include="..\source\ConvertUTF.c" />
+    <ClCompile Include="..\source\DrawGame.cpp" />
+    <ClCompile Include="..\source\DrawUtils.cpp" />
+    <ClCompile Include="..\source\FileIO.cpp" />
+    <ClCompile Include="..\source\Game.cpp" />
+    <ClCompile Include="..\source\GameState.cpp" />
+    <ClCompile Include="..\source\Klondike.cpp" />
+    <ClCompile Include="..\source\MyBrush.cpp" />
+    <ClCompile Include="..\source\Options.cpp" />
+    <ClCompile Include="..\source\PlayUntil.cpp" />
+    <ClCompile Include="..\source\SolitaireIniFile.cpp" />
+    <ClCompile Include="..\source\Stats.cpp" />
+    <ClCompile Include="..\source\stdafx.cpp" />
+    <ClCompile Include="..\source\Strategy.cpp" />
+    <ClCompile Include="..\source\TraceToNotepad.cpp" />
+    <ClCompile Include="..\source\TStringConvert.cpp" />
+    <ClCompile Include="..\source\Utils.cpp" />
+    <ClCompile Include="..\source\Utils2.cpp" />
+    <ClCompile Include="..\source\Utils3.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\AboutBox.h" />
+    <ClInclude Include="..\source\Armadillo.h" />
+    <ClInclude Include="..\source\BigCard.h" />
+    <ClInclude Include="..\source\Card.h" />
+    <ClInclude Include="..\source\ConvertUTF.h" />
+    <ClInclude Include="..\source\DragBits.h" />
+    <ClInclude Include="..\source\DrawUtils.h" />
+    <ClInclude Include="..\source\FileIO.h" />
+    <ClInclude Include="..\source\Game.h" />
+    <ClInclude Include="..\source\GameState.h" />
+    <ClInclude Include="..\source\Klondike.h" />
+    <ClInclude Include="..\source\MyBrush.h" />
+    <ClInclude Include="..\source\Options.h" />
+    <ClInclude Include="..\source\people.h" />
+    <ClInclude Include="..\source\PlayUntil.h" />
+    <ClInclude Include="..\source\Resource.h" />
+    <ClInclude Include="..\source\SecuredSections.h" />
+    <ClInclude Include="..\source\SolitaireIniFile.h" />
+    <ClInclude Include="..\source\Stats.h" />
+    <ClInclude Include="..\source\stdafx.h" />
+    <ClInclude Include="..\source\Strategy.h" />
+    <ClInclude Include="..\source\TraceToNotepad.h" />
+    <ClInclude Include="..\source\TStringConvert.h" />
+    <ClInclude Include="..\source\Utils.h" />
+    <ClInclude Include="..\source\VisibleRectangle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\source\facecards\jackclubs.gif" />
+    <Image Include="..\source\facecards\jackdiamonds.gif" />
+    <Image Include="..\source\facecards\jackhearts.gif" />
+    <Image Include="..\source\facecards\jackspades.gif" />
+    <Image Include="..\source\facecards\kingclubs.gif" />
+    <Image Include="..\source\facecards\kingdiamonds.gif" />
+    <Image Include="..\source\facecards\kinghearts.gif" />
+    <Image Include="..\source\facecards\kingspades.gif" />
+    <Image Include="..\source\facecards\queenclubs.gif" />
+    <Image Include="..\source\facecards\queendiamonds.gif" />
+    <Image Include="..\source\facecards\queenhearts.gif" />
+    <Image Include="..\source\facecards\queenspades.gif" />
+    <Image Include="..\source\Klondike.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\source\Klondike.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

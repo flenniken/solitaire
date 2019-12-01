@@ -1,4 +1,16 @@
 junk/
 stuff/
-win/
 source/facecards/
+win/*sln
+win/Backup/
+.vs
+*.ncb
+win/Debug
+win/Release
+*.suo
+*.user
+.DS_Store
+win/GenVersionNumber.exe
+*.filters
+win/SetupKeypictKlondike/
+*.vcproj
