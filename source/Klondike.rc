@@ -86,7 +86,7 @@ BEGIN
     END
     POPUP "&Help"
     BEGIN
-        MENUITEM "&www.keypict.com/klondike.html...\tV", IDM_VISITKEYPICT
+        MENUITEM "&https://github.com/flenniken/solitaire...\tV", IDM_VISITKEYPICT
         MENUITEM SEPARATOR
         MENUITEM "&About...\tA",                IDM_ABOUT
     END
@@ -136,7 +136,7 @@ BEGIN
     CONTROL         "",IDC_ABOUTPICTURE,"Static",SS_OWNERDRAW,0,0,175,249
     CTEXT           "Keypict Klondike",IDC_STATIC,0,90,173,8,SS_NOPREFIX
     CTEXT           AboutVersionString,IDC_STATIC,0,110,173,8,SS_NOPREFIX
-    CTEXT           "Copyright (C) 2007",IDC_STATIC,0,130,173,8
+    CTEXT           "Copyright (C) 2007-2019",IDC_STATIC,0,130,173,8
 END
 
 IDD_STRATEGY DIALOGEX 0, 0, 324, 283

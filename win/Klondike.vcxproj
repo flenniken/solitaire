@@ -51,10 +51,6 @@
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <PreBuildEvent>
-      <Message>Generate Version Number</Message>
-      <Command>GenVersionNumber "1,1,0,0" "1.1"&gt;..\source\VersionNumber.h</Command>
-    </PreBuildEvent>
     <ClCompile>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\..\people\source;..\..\Keypict Photo Search\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -73,10 +69,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <PreBuildEvent>
-      <Message>Generate Version Number</Message>
-      <Command>GenVersionNumber "1,0,0,0" "1.0"&gt;..\source\VersionNumber.h</Command>
-    </PreBuildEvent>
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\people\source;..\..\Keypict Photo Search\source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>NOPAINT;%(PreprocessorDefinitions)</PreprocessorDefinitions>

@@ -24,7 +24,7 @@
 HINSTANCE gInstance;
 HWND gMainWindow;
 static TCHAR gWindowClass[] = _T("KeypictKlondike");
-static TCHAR gKeypictKlondikeURL[] = _T("http://www.keypict.com/klondike.html");
+static TCHAR gKeypictKlondikeURL[] = _T("https://github.com/flenniken/solitaire");
 static bool gDrawLabels;
 
 TraceToNotepad_Object;
