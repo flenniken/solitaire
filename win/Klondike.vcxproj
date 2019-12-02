@@ -53,7 +53,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
       <Message>Generate Version Number</Message>
-      <Command>GenVersionNumber "1,0,0,0" "1.0"&gt;..\source\VersionNumber.h</Command>
+      <Command>GenVersionNumber "1,1,0,0" "1.1"&gt;..\source\VersionNumber.h</Command>
     </PreBuildEvent>
     <ClCompile>
       <Optimization>Disabled</Optimization>

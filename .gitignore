@@ -14,3 +14,5 @@ win/GenVersionNumber.exe
 *.filters
 win/SetupKeypictKlondike/
 *.vcproj
+*.aps
+
