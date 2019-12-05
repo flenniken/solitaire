@@ -1,7 +1,7 @@
-// Copyright 2006-2007 Keypict
+// Copyright 2006-2019 Flenniken
 // All Rights Reserved.
 
-// keypict includes utils.cpp, utils2.cpp and utils3.cpp
+// klondike includes utils.cpp, utils2.cpp and utils3.cpp
 // installer includes utils2.cpp and utils3.cpp
 // uninstaller includes utils3.cpp
 
@@ -191,7 +191,7 @@ void GetUserDataFolder(TString &userDataFolder)
 	if (gUserDataFolder.empty())
 	{
 		TString folder;
-		Utils::GetStandardFilename(CSIDL_APPDATA, _T("Keypict\\"), folder);
+		Utils::GetStandardFilename(CSIDL_APPDATA, _T("Klondike\\"), folder);
 		if (folder.empty())
 			return;
 
@@ -218,21 +218,6 @@ uint64 Utils::GetFileSize(const TString &filename)
 
 	return fileSize;
 }
-
-#ifdef DEBUG
-void Utils::WriteMetadataFile(const TString &baseName, const UTF8String &metadata)
-{
-	TString filename;
-	Utils::MakeFullPath(baseName, filename);
-	if (filename.empty())
-		return;
-
-	FileIO fp;
-	if (fp.Open(filename, _T("wb")))
-		return;
-	fp.WriteBytes(&metadata[0], (FileIO::FileLength)metadata.size());
-}
-#endif
 
 void Utils::MakeKeywordString(const std::vector<TString> &keys, TString &keywords)
 {

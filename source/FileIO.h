@@ -1,4 +1,4 @@
-// Copyright 2006-2007 Keypict
+// Copyright 2006-2019 Flenniken
 
 #pragma once
 

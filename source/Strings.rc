@@ -6,7 +6,7 @@
 #define kStrAppTitle				1
 #define kStrCannotAddKeywords		2
 #define kStrUnsupportedVersion		3
-#define kStrOpenFileToBegin			4
+//#define kStrOpenFileToBegin			4
 #define kStrAreYouSure				5
 #define kStrCannotAssignKeys		6
 #define kStrPressKey				7
@@ -48,10 +48,9 @@
 
 STRINGTABLE 
 BEGIN
-    kStrAppTitle			"Keypict"
+    kStrAppTitle			"Klondike"
 	kStrCannotAddKeywords	"Unable to write the keywords to the file."
-	kStrUnsupportedVersion	"Keypict requires Windows 2000 or newer. \nSee http://www.keypict.com"
-    kStrOpenFileToBegin		"Welcome to Keypict\r\n\r\nTo begin adding keywords to photos:\r\n\r\n   1. Open a digital photo (Ctrl+O),\r\n   2. Assign keys to keywords (Ctrl+K),\r\n   3. Type single keys to add keywords.\r\n\r\nFor more information see the help file."
+	kStrUnsupportedVersion	"Klondike requires Windows 2000 or newer."
 	kStrAreYouSure			"Are you sure you want to delete keyword(s):\n'^1'?"
     kStrCannotAssignKeys	"You cannot assign these keys: Left, Right, Up, Down, Home, End, Backspace, Return and Esc,\nor Ctrl+E, Ctrl+C, Ctrl+K, Ctrl+O, Ctrl+T, Ctrl+V and Ctrl+Up. \nThese keys control the program."
     kStrPressKey			"Press key"
@@ -66,7 +65,7 @@ BEGIN
     kStrDescription			"Add keywords to digital photos."
 	kStrNotEnoughDisk		"Not enough disk space to install in this folder. \n^1 KB needed, ^2 KB available."
 	kStrUnableToWriteFile	"Unable to write the files to the install folder."
-	kStrUninstallPrompt		"Are you sure you want to uninstall Keypict?"
+	kStrUninstallPrompt		"Are you sure you want to uninstall Klondike?"
 	kStrInstall				"&Install"
 	kStrNext				""
 	kStrValidUntil			"Evaluation Copy. Good for ^1 more days."

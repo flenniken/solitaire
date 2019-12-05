@@ -1,4 +1,4 @@
-// Copyright 2007 Keypict
+// Copyright 2007-2019 Flenniken
 // All Rights Reserved.
 
 #include "stdafx.h"

@@ -49,7 +49,7 @@
 #define IDM_EXIT                        105
 #define IDC_KLONDIKE_ACCELERATORS       106
 #define IDC_KLONDIKE_MENU               107
-#define IDM_VISITKEYPICT                108
+#define IDM_VISITFLENNIKEN                108
 #define IDR_MAINFRAME                   128
 #define IDD_STRATEGY                    132
 #define IDD_PLAYUNTIL                   133

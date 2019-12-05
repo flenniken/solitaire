@@ -1,7 +1,7 @@
-// Copyright 2006-2007 Keypict
+// Copyright 2006-2019 Flenniken
 // All Rights Reserved.
 
-// keypict includes utils.cpp, utils2.cpp and utils3.cpp
+// klondike includes utils.cpp, utils2.cpp and utils3.cpp
 // installer includes utils2.cpp and utils3.cpp
 // uninstaller includes utils3.cpp
 
@@ -11,7 +11,7 @@
 #include "Utils.h"
 #include "shlobj.h"
 
-static TCHAR gKeypictString[] = _T("Keypict");
+static TCHAR gKlondikeString[] = _T("Klondike");
 
 
 void Utils::FileParts(const TString &currentFilename, TString &currentDirectory, TString &baseFilename)
@@ -27,7 +27,7 @@ void Utils::FileParts(const TString &currentFilename, TString &currentDirectory,
 
 int32 Utils::MessageBox(HWND owner, const TString &message, uint32 flags)
 {
-	return ::MessageBox(owner, message.c_str(), gKeypictString, flags);
+	return ::MessageBox(owner, message.c_str(), gKlondikeString, flags);
 }
 
 #define kMaxMessage 1000 // The maximum message size in characters.

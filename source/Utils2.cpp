@@ -1,7 +1,7 @@
-// Copyright 2006-2007 Keypict
+// Copyright 2007-2019 Flenniken
 // All Rights Reserved.
 
-// keypict includes utils.cpp, utils2.cpp and utils3.cpp
+// klondike includes utils.cpp, utils2.cpp and utils3.cpp
 // installer includes utils2.cpp and utils3.cpp
 // uninstaller includes utils3.cpp
 

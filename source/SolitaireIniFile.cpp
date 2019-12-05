@@ -1,4 +1,4 @@
-// Copyright 2006-2007 Keypict
+// Copyright 2006-2019 Flenniken
 // All Rights Reserved.
 
 #include "People.h"
@@ -14,7 +14,7 @@
 #define kMaxStringLength 1000
 #define kMaxBufferLength 1000
 
-IniFileAccess gIniFileAccess(_T("Klondike.ini"), _T("Keypict Klondike Solitaire"));
+IniFileAccess gIniFileAccess(_T("Klondike.ini"), _T("Flenniken Klondike Solitaire"));
 
 #ifdef DEBUG
 bool gConstructorCalled;
@@ -30,7 +30,7 @@ IniFileAccess *SolitaireIniFile::GetIniFileAccess()
 
 IniFileAccess::IniFileAccess(const TString &baseName, const TString &sectionName)
 {
-	// Make a full path in the users data folder in "Keypict" folder.
+	// Make a full path in the users data folder in "klondike" folder.
 	Utils::MakeFullPath(baseName, fFilename);
 
 	fSectionName = sectionName;

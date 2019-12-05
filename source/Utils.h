@@ -1,4 +1,4 @@
-// Copyright 2006-2007 Keypict
+// Copyright 2007-2019 Flenniken
 // All Rights Reserved.
 
 #pragma once
@@ -301,14 +301,6 @@ public:
 		@return 0 when successful.
 	*/
 	static int OpenReadClose(const TString &filename, uint32 fileOffset, uint32 length, UTF8String &data);
-
-#ifdef DEBUG
-	/** Write the given metadata to the specified file in the Keypict data folder.
-		@param baseName is the filename without path info.
-		@param metadata is the raw metadata to write.
-	*/
-	static void WriteMetadataFile(const TString &baseName, const UTF8String &metadata);
-#endif
 
 #ifdef _WINDOWS_
 	// Display a message box. See Windows MessageBox.

@@ -1,4 +1,4 @@
-// Copyright 2007 Keypict
+// Copyright 2007-2019 Flenniken
 // All Rights Reserved.
 
 #include "stdafx.h"
@@ -23,8 +23,8 @@
 // Global Variables:
 HINSTANCE gInstance;
 HWND gMainWindow;
-static TCHAR gWindowClass[] = _T("KeypictKlondike");
-static TCHAR gKeypictKlondikeURL[] = _T("https://github.com/flenniken/solitaire");
+static TCHAR gWindowClass[] = _T("FlennikenKlondike");
+static TCHAR gFlennikenKlondikeURL[] = _T("https://github.com/flenniken/solitaire");
 static bool gDrawLabels;
 
 TraceToNotepad_Object;
@@ -203,8 +203,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		case IDM_ABOUT:
 			AboutBoxUtils::ShowDialog();
 			break;
-		case IDM_VISITKEYPICT:
-			Utils::OpenInDefault(gKeypictKlondikeURL);
+		case IDM_VISITFLENNIKEN:
+			Utils::OpenInDefault(gFlennikenKlondikeURL);
 			break;
 		case ID_FILE_STRATEGY:
 			{
