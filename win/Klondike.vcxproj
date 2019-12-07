@@ -86,9 +86,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\source\AboutBox.cpp" />
-    <ClCompile Include="..\source\Armadillo.cpp">
-      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Disabled</Optimization>
-    </ClCompile>
     <ClCompile Include="..\source\BigCard.cpp" />
     <ClCompile Include="..\source\ConvertUTF.c" />
     <ClCompile Include="..\source\DrawGame.cpp" />
@@ -112,7 +109,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\source\AboutBox.h" />
-    <ClInclude Include="..\source\Armadillo.h" />
     <ClInclude Include="..\source\BigCard.h" />
     <ClInclude Include="..\source\Card.h" />
     <ClInclude Include="..\source\ConvertUTF.h" />

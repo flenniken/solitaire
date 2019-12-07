@@ -15,7 +15,6 @@
 #include <commctrl.h>
 #include <algorithm>
 #include "BigCard.h"
-#include "Armadillo.h"
 
 class AboutBox
 {
