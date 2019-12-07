@@ -3,13 +3,15 @@
 Klondike Solitaire game for Windows. You can define strategies and
 play games automatically keeping track of statistics.
 
-<img src="window.png">
+## Board and Menu
 
-<img src="menu.png">
+<img src="menu.png" width="417" height="226"><br/>
 
-<img src="play.png">
+## Automatic Playing
 
-<img src="strategy.png">
+<img src="play.png" width="386" height="302"><br/>
 
-<img src="ace.png">
+## Picking Your Strategy
+
+<img src="strategy.png" width="285" height="299"><br/>
 
