@@ -134,18 +134,6 @@
     <ClInclude Include="..\source\VisibleRectangle.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\source\facecards\jackclubs.gif" />
-    <Image Include="..\source\facecards\jackdiamonds.gif" />
-    <Image Include="..\source\facecards\jackhearts.gif" />
-    <Image Include="..\source\facecards\jackspades.gif" />
-    <Image Include="..\source\facecards\kingclubs.gif" />
-    <Image Include="..\source\facecards\kingdiamonds.gif" />
-    <Image Include="..\source\facecards\kinghearts.gif" />
-    <Image Include="..\source\facecards\kingspades.gif" />
-    <Image Include="..\source\facecards\queenclubs.gif" />
-    <Image Include="..\source\facecards\queendiamonds.gif" />
-    <Image Include="..\source\facecards\queenhearts.gif" />
-    <Image Include="..\source\facecards\queenspades.gif" />
     <Image Include="..\source\Klondike.ico" />
   </ItemGroup>
   <ItemGroup>
