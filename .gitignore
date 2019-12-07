@@ -5,8 +5,8 @@ win/*sln
 win/Backup/
 .vs
 *.ncb
-win/Debug
-win/Release
+*Debug/
+*Release/
 *.suo
 *.user
 .DS_Store
@@ -15,4 +15,4 @@ win/GenVersionNumber.exe
 win/SetupKeypictKlondike/
 *.vcproj
 *.aps
-
+*.sln
