@@ -11,7 +11,13 @@ play games automatically keeping track of statistics.
 
 <img src="play.png" width="386" height="302"><br/>
 
-## Picking Your Strategy
+## Pick Your Strategy
 
 <img src="strategy.png" width="285" height="299"><br/>
 
+## Download Installer
+
+For Windows users, click the download link then run it to install the game: [Download](https://flenniken.net/solitaire/KlondikeInstaller-1.2.0.msi "download me")
+
+
+<img src="spade.svg" width="300" height="363">
